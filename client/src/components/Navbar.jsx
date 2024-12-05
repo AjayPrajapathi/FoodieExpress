@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Navbar.css";
 import { assets } from "../assets/assets";
 import {
@@ -12,15 +12,18 @@ import { fab } from "@fortawesome/free-brands-svg-icons"; // Brand icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
+
+const [menu,setMenu]=useState("home")
+
   return (
     <div className="navbar">
       <img src={assets.logo} alt="" className="logo" />
 
       <ul className="navbar-menu">
-        <li>Home</li>
-        <li>Menu</li>
-        <li>Mobile-app</li>
-        <li>Contact us</li>
+        <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""} >Home</li>
+        <li onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>Menu</li>
+        <li onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>Mobile-app</li>
+        <li onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>Contact us</li>
       </ul>
 
       <div className="navbar-right">
