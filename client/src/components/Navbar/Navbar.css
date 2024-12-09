@@ -1,8 +1,9 @@
 .navbar {
-    padding: 20px 0px;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(248, 243, 243);
 }
 
 .navbar .logo {
@@ -13,13 +14,13 @@
     display: flex;
     list-style: none;
     gap: 20px;
-    color: #49557E;
+    color:black;
     font-size: 18px;
 }
 
-.navbar-menu .active {
+.navbar-menu .act {
     padding-bottom: 2px;
-    border-bottom: 2px solid #49557E;
+    border-bottom: 2px solid #10f123;
 }
 
 .navbar-right {
@@ -41,24 +42,36 @@ position: relative;
     top: -8px;
     right: -8px;
 }
+.right{
+    display: flex;
+    gap:30px;
+
+}
+.icon{
+    font-size: 25px;
+    color: green;
+}
 
 .navbar-right button {
     background: transparent;
     font-size: 16px;
-    color: #49557E;
-    border: 1px solid #FF4C24;
+    color: white;
+    border: 1px solid green;
     padding: 10px 30px;
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
+    background-color: rgb(70, 218, 70);
 }
 
 .navbar-right button:hover {
-    background: #fff4f2;
+    background: green;
+    color: white;
 }
 
 .navbar-profile{
     position: relative;
+    /* background-color: white; */
 
 }
 .navbar-profile-dropdown{
@@ -66,27 +79,31 @@ position: relative;
     display: none;
     right: 0;
     z-index: 1;
+    /* background-color: white; */
 }
 .navbar-profile-dropdown li{
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    color:green;
+    /* background-color: white; */
 }
-.navbar-profile-dropdown img{
+/* .navbar-profile-dropdown img{
     width: 20px;
-}
+} */
 .navbar-profile-dropdown li:hover{
-    color: #FF4C24;
+    color: green;
+    /* background-color: white; */
 }
 .navbar-profile:hover .navbar-profile-dropdown{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #fff2ef;
+    background-color: white;
     padding: 12px 25px;
     border-radius: 4px;
-    border: 1px solid tomato;
+    border: 1px solid green;
     outline: 2px solid white;
     list-style: none;
 }

@@ -5,6 +5,8 @@ import { assets } from '../../assets/assets';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCashRegister, faCreditCard, faMoneyBill, faMoneyBillTransfer, faMoneyCheck } from '@fortawesome/free-solid-svg-icons';
 
 const PlaceOrder = () => {
 
@@ -113,12 +115,14 @@ const PlaceOrder = () => {
                 </div>
                 <div className="payment">
                     <h2>Payment Method</h2>
-                    <div onClick={() => setPayment("cod")} className="payment-option">
-                        <img src={payment === "cod" ? assets.checked : assets.un_checked} alt="" />
+                    <div onClick={() => setPayment("cod")} className={payment === "cod" ? "payment-option active": "payment-option"}>
+                        {/* <img src={payment === "cod" ? assets.checked : assets.un_checked} alt="" /> */}
+                        <FontAwesomeIcon icon={faMoneyBill}  className={payment === "cod" ? "active": ""}/>
                         <p>COD ( Cash on delivery )</p>
                     </div>
-                    <div onClick={() => setPayment("stripe")} className="payment-option">
-                        <img src={payment === "stripe" ? assets.checked : assets.un_checked} alt="" />
+                    <div onClick={() => setPayment("stripe")} className={payment === "stripe" ? "payment-option active": "payment-option"}>
+                        {/* <img src={payment === "stripe" ? assets.checked : assets.un_checked} alt="" /> */}
+                       <FontAwesomeIcon icon={faCreditCard } className={payment === "stripe" ? "active" : ""}/>
                         <p>Stripe ( Credit / Debit )</p>
                     </div>
                 </div>

@@ -1,5 +1,8 @@
 .my-orders{
+    /* height: 800px; */
+    /* min-height:600px; */
     margin: 50px 0px;
+    background-color:white;
 }
 .my-orders .container{
     display: flex;
@@ -14,19 +17,27 @@
     gap: 30px;
     font-size: 14px;
     padding: 10px 20px;
-    color: #454545;
+    color: black;
     border: 1px solid tomato;
 }
 .my-orders-order img{
     width: 50px;
 }
 .my-orders-order p span{
-    color: tomato;
+    color: red;
 }
 .my-orders-order p b{
     font-weight: 500;
     color: #454545;
 }
+
+.no-delivery{
+display: flex;
+flex-direction: column;
+
+
+}
+
 .my-orders button{
     border: none;
     padding: 12px 0px;

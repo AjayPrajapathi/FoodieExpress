@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'

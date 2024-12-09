@@ -1,13 +1,16 @@
 import React from 'react'
 import './Header.css'
 
+
+
 const Header = () => {
+
     return (
         <div className='header'>
             <div className='header-contents'>
-                <h2>Order your favourite food here</h2>
-                <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
-                <button>View Menu</button>
+                <h2>Craving something delicious? Order now!</h2>
+                <p>Discover a menu bursting with flavors, crafted from the finest ingredients by expert chefs. Indulge in a dining experience designed to satisfy and impress</p>
+                <a href='#explore-menu'><button>View Menu</button></a>
             </div>
         </div>
     )
