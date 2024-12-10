@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./FoodItem.css";
 import { assets } from "../../assets/assets";
-import { storeContext } from "../../context/StoreContext";
+import { storeContext } from "../../Context/StoreContext";
 
 const FoodItem = ({ image, name, price, desc, id }) => {
   const [itemCount, setItemCount] = useState(0);

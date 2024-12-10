@@ -1,19 +1,16 @@
-
 import React, { useContext, useState } from "react";
 import "./Navbar.css";
 
 import { Link, useNavigate } from "react-router-dom";
 // import { storeContext } from "../../context/StoreContext";
-import { storeContext } from "../../context/StoreContext";
+import { storeContext } from "../../Context/StoreContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-
   faCartShopping,
   faListCheck,
   faSignOut,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
@@ -63,7 +60,6 @@ const Navbar = ({ setShowLogin }) => {
         </a>
       </ul>
       <div className="navbar-right">
-    
         <Link to="/cart" className="navbar-search-icon">
           {/* <img src={assets.basket_icon} alt="" /> */}
           <FontAwesomeIcon className="icon" icon={faCartShopping} />
@@ -74,7 +70,7 @@ const Navbar = ({ setShowLogin }) => {
         ) : (
           <div className="right">
             <div onClick={() => navigate("/myorders")}>
-              <FontAwesomeIcon className="icon"icon={faListCheck}/>
+              <FontAwesomeIcon className="icon" icon={faListCheck} />
             </div>
 
             <div className="navbar-profile">
@@ -87,7 +83,6 @@ const Navbar = ({ setShowLogin }) => {
                 </li>
                 <hr /> */}
                 <li onClick={logout}>
-               
                   <FontAwesomeIcon icon={faSignOut} /> <p>Logout</p>
                 </li>
               </ul>
