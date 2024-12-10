@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './MyOrders.css'
 import axios from 'axios'
-import { StoreContext } from '../../Context/StoreContext';
+// import { StoreContext } from '../../Context/StoreContext';
+import { storeContext } from '../../context/StoreContext';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faShippingFast } from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +10,7 @@ import {  faShippingFast } from '@fortawesome/free-solid-svg-icons';
  const MyOrders = () => {
   
   const [data,setData] =  useState([]);
-  const {url,token,currency} = useContext(StoreContext);
+  const {url,token,currency} = useContext(storeContext);
 
   const fetchOrders = async () => {
     const response = await axios.post(url+"/api/order/userorders",{},{headers:{token}});

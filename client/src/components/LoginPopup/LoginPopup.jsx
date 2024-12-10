@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
 import "./LoginPopup.css";
 import { assets } from "../../assets/assets";
-import { StoreContext } from "../../context/StoreContext";
+import { storeContext } from "../../context/StoreContext";
 
 import axios from "axios";
 import { toast } from "react-toastify";
 
 const LoginPopup = ({ setShowLogin }) => {
-  const { setToken, url, loadCartData } = useContext(StoreContext);
+  const { setToken, url, loadCartData } = useContext(storeContext);
   const [currState, setCurrState] = useState("Sign Up");
 
   const [data, setData] = useState({

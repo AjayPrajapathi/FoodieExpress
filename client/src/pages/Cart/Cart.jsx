@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./Cart.css";
-import { StoreContext } from "../../Context/StoreContext";
+// import { StoreContext } from "../../Context/StoreContext";
+import { storeContext } from "../../context/StoreContext";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,7 +19,7 @@ const Cart = () => {
     url,
     currency,
     deliveryCharge,
-  } = useContext(StoreContext);
+  } = useContext(storeContext);
   const navigate = useNavigate();
 
   return (

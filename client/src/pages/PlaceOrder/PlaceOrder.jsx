@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './PlaceOrder.css'
-import { StoreContext } from '../../Context/StoreContext'
+// import { StoreContext } from '../../Context/StoreContext'
+import { storeContext } from '../../context/StoreContext';
 import { assets } from '../../assets/assets';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -23,7 +24,7 @@ const PlaceOrder = () => {
         phone: ""
     })
 
-    const { getTotalCartAmount, token, food_list, cartItems, url, setCartItems,currency,deliveryCharge } = useContext(StoreContext);
+    const { getTotalCartAmount, token, food_list, cartItems, url, setCartItems,currency,deliveryCharge } = useContext(storeContext);
 
     const navigate = useNavigate();
 
