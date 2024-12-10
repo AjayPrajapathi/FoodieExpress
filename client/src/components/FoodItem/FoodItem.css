@@ -2,13 +2,15 @@
     width: 100%;
     margin: auto;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px #00000015;
+    box-shadow: 0px 0px 5px black;
     transition: 0.3s;
     animation: fadeIn 1s;
+    
     /* background:linear-gradient(red,green,) */
 }
 .food-item:hover{
     transform: scale(1.02);
+    box-shadow: 0px 0px 5px green;
 }
 .food-item-img-container{
     position: relative;
@@ -46,7 +48,10 @@
     width: 30px;
 }
 .food-item-info{
+   
     padding: 20px;
+    border-width: 2px;
+    
 }
 .food-item-name-rating{
     display: flex;
@@ -66,7 +71,7 @@
     font-size: 12px;
 }
 .food-item-price{
-    color: #FF4C24;
+    color:green;
     font-size: 22px;
     font-weight: 500;
     margin: 10px 0px;

@@ -5,9 +5,10 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "server": "nodemon server.js"
   },
-  "author": "",
+  "author": "Ajay Prajapathi",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -18,8 +19,10 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.1.1",
     "multer": "^1.4.5-lts.1",
-    "nodemon": "^3.0.3",
     "stripe": "^14.17.0",
     "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }
