@@ -115,9 +115,9 @@
 
 import React, { useContext, useEffect, useState } from "react";
 import "./Navbar.css";
-import { assets } from "../../assets/assets";
+
 import { Link, useNavigate } from "react-router-dom";
-import { StoreContext } from "../../Context/StoreContext";
+import { StoreContext } from "../../context/StoreContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBagShopping,
@@ -126,6 +126,7 @@ import {
   faSignOut,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
