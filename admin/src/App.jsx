@@ -7,13 +7,15 @@ import List from './pages/List/List'
 import Orders from './pages/Orders/Orders'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const App = () => {
   return (
     <div className='app'>
       <ToastContainer />
       <Navbar />
-      <hr />
+
       <div className="app-content">
         <Sidebar />
         <Routes>

@@ -37,7 +37,7 @@ const List = () => {
 
   return (
     <div className='list add flex-col'>
-      <p>All Foods List</p>
+      <p style={{fontSize:"18px",color:"black"}}>All Foods List</p>
       <div className='list-table'>
         <div className="list-table-format title">
           <b>Image</b>
@@ -53,7 +53,7 @@ const List = () => {
               <p>{item.name}</p>
               <p>{item.category}</p>
               <p>{currency}{item.price}</p>
-              <p className='cursor' onClick={() => removeFood(item._id)}>x</p>
+              <p className='cursor' onClick={() => removeFood(item._id)}>Delete</p>
             </div>
           )
         })}

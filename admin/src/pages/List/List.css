@@ -4,14 +4,24 @@
     align-items: center;
     gap: 10px;
     padding: 12px 15px;
-    border: 1px solid #cacaca;
-    font-size: 13px;
+    border: 1px solid #7de482;
+    font-size: 16px;
+    color: black;
+    /* border-radius: 10px; */
 }
 .list-table-format.title{
-    background-color: #f9f9f9;
+    background-color: #aff7ac;
 }
 .list-table-format img{
     width: 50px;
+}
+.cursor{
+    background-color: red;
+    border-radius: 10px;
+    padding:4px 2px;
+    color:white;
+    text-align: center;
+
 }
 @media(max-width:600px){
 

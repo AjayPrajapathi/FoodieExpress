@@ -36,11 +36,11 @@ const Order = () => {
 
   return (
     <div className='order add'>
-      <h3>Order Page</h3>
+      <h3>All Orders</h3>
       <div className="order-list">
         {orders.map((order, index) => (
           <div key={index} className='order-item'>
-            <img src={assets.parcel_icon} alt="" />
+            <img className='order-icon' src={assets.order_icon} alt="" />
             <div>
               <p className='order-item-food'>
                 {order.items.map((item, index) => {

@@ -5,6 +5,9 @@
     color: #6D6D6D;
     font-size: 16px;
 }
+input{
+    outline: none;
+}
 .add form{
    gap: 20px;
 }
@@ -26,10 +29,11 @@
     padding: 10px;
 }
 .add-btn{
+    font-weight: bold;
     max-width: 120px;
     border: none;
     padding: 10px;
-    background-color: black;
+    background-color: green;
     color: white;
     cursor: pointer;
 }

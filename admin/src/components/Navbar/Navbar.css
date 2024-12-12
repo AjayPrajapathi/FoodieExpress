@@ -3,10 +3,27 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px 4%;
+    background-color: #f8eeee;
 }
 .navbar .logo{
     width: max(10%,80px);
 }
 .navbar .profile{
     width: 40px;
+}.logo {
+    color: #D32F2F; /* Deep Red */
+    font-weight: bold;
+    /* justify-self: flex-start; */
+    text-decoration: underline green;
+}
+
+.logo span {
+    color: #2E7D32; /* Green */
+    
+}
+.admin-panel{
+    background-color: rgb(245, 115, 115);
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
 }
