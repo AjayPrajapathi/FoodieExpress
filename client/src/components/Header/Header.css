@@ -19,9 +19,10 @@
   width: 95vw;
   height: 28vw;
   margin: 30px auto;
-  background: url("/headers.jpg"); /* Remove the quotes around the image name if it's in the public folder */
-  background-size: cover;
-  position: relative;
+  background-color: rgba(0, 0, 0, 0.377);
+  /* background: url("/headers.jpg");  */
+  /* background-size: cover; */
+  /* position: relative; */
   display: flex;
   padding-right: 10px;
 
