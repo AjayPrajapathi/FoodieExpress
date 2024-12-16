@@ -1,4 +1,4 @@
-.header {
+/* .header {
   width: 95vw;
   height: 28vw;
   margin: 30px auto;
@@ -9,12 +9,30 @@
   padding-right: 10px;
   border-radius: 20px;
   flex-direction: column;
-  /* opacity: 0.5; */
+
   align-items: center;
   justify-content: center;
   box-shadow: inset 5px 4px 10px green;
-  /* background-color: aqua; */
+
+} */
+.header {
+  width: 95vw;
+  height: 28vw;
+  margin: 30px auto;
+  background: url("/header_img.png") no-repeat; /* Remove the quotes around the image name if it's in the public folder */
+  background-size: cover;
+  position: relative;
+  display: flex;
+  padding-right: 10px;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 5px 4px 10px green;
 }
+
+
+
 .header-contents {
   /* position: absolute; */
   display: flex;
